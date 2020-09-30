@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" contenteditable>
+<html lang="en" contenteditable="">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frames and Windows</title>
     <style>
         html {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-family: monospace;
             font-weight: 600;
+
+        }
+
+        body {
+            background-color: #000;
+            color: #0f0;
+            line-height: 1.7;
         }
     </style>
 </head>
 
 <body>
+    <script>
+        window.onload = () => {
+            document.body.addEventListener("keydown", (e) => {
+                if (e.keyCode === 9) {
+                    e.preventDefault();
+                }
+            });
 
+        };
+    </script>
 </body>
 
 </html>
